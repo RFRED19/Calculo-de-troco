@@ -1,0 +1,35 @@
+/* PROBLEMATICA
+
+Crie um programa que calcule o troco
+*/
+
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.mycompany.trocojava;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class TrocoJava {
+
+    public static void main(String[] args) {
+        //variaveis 
+        double total,valorpago,troco;
+        //objetos
+        Scanner teclado = new Scanner(System.in);
+        DecimalFormat formatador = new DecimalFormat("#0,00");
+        //entrada1
+        System.out.println("Seja bem vindo!!! ");
+        System.out.println("Qual o valor de sua compra? ");  
+        total = teclado.nextDouble();
+        System.out.println("Qual o valor pago? ");
+        valorpago = teclado.nextDouble();
+        //processamento
+        troco = (total - valorpago);
+
+       System.out.println("o seu troco é: "+troco);
+        
+    }
+}
